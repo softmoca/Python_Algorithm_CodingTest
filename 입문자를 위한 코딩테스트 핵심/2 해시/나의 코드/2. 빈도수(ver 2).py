@@ -1,8 +1,12 @@
 from collections import defaultdict, Counter
 def solution(nums):
     answer = -1
-    
- 
+    CC=Counter(nums)
+    for x in CC:
+        if CC[x]==1:
+            if answer<x:
+                answer=x
+
     return answer
                             
                 

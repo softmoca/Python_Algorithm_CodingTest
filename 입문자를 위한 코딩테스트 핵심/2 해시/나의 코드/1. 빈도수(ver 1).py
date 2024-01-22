@@ -1,8 +1,21 @@
+from collections import defaultdict
 def solution(nums):
     answer = -1
-    
+    MM=0
+    dic=defaultdict()
+    for x in nums:
+        if x in dic:
+            dic[x]=2
+        else:
+            dic[x]=1
+    for key in dic:
+        if dic[key]==1:
+            if MM< key:
+                MM=key
+
+
        
-    return answer
+    return -1 if MM==0 else MM
                             
                 
 print(solution([3, 9, 2, 12, 9, 12, 8, 7, 9, 12]))

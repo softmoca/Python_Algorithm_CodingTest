@@ -1,9 +1,16 @@
 from collections import Counter
 def solution(nums):
-    answer = 0
+    answer = 10000
+    CC=Counter(nums)
     
+    for x in CC:
+        if CC[x]==x:
+            if answer > x:
+                answer=x
+    return -1 if answer ==10000 else answer
 
-    return answer 
+
+
                           
 print(solution([1, 2, 3, 1, 3, 3, 2, 4]))
 print(solution([1, 2, 3, 3, 3, 2, 4, 5, 5, 5]))
