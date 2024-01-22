@@ -1,7 +1,17 @@
 def solution(nums):
     answer = []
-   
-                
+
+    nums.sort()
+    M=1000
+    for i in range(1,len(nums)):
+        if nums[i]-nums[i-1] <M:
+            M=nums[i]-nums[i-1]
+
+    for i in range(1,len(nums)):
+        if nums[i]-nums[i-1]==M:
+            answer.append([nums[i-1],nums[i]])
+    answer.sort(key= lambda x:x[0])
+               
     return answer
 
 print(solution([3, 8, 1, 5, 12]))

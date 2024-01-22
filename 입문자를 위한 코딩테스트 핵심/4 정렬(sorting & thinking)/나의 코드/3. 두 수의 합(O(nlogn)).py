@@ -1,6 +1,18 @@
 def solution(nums, target):
     answer = [0]*2
-   
+    p1=0
+    p2=1
+    nums.sort()
+    while True:
+        if nums[p1]+nums[p2] <target:
+            if nums[p1+1]-nums[p1] < nums[p2+1]-nums[p2]:
+                p1+=1
+            else:
+                p2+=1
+
+
+ 
+    
             
     return answer
     

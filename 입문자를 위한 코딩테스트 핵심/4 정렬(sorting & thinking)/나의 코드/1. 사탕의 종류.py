@@ -1,7 +1,13 @@
+from collections import Counter
 def solution(nums):
     answer = 0
+    CC=Counter(nums)
     
-            
+    if len(CC)>=len(nums)//2:
+        answer=len(nums)//2
+    else:
+        answer=len(CC)
+
     return answer
     
                        
