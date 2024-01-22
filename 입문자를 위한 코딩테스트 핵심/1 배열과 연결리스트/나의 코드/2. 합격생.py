@@ -1,6 +1,11 @@
 def solution(score, k):
     answer = 0
-          
+    for x in score:
+        if x >=k:
+            answer+=1
+
+        
+
     return answer
 
 print(solution([60, 50, 80, 90, 55, 70, 65, 45], 60))

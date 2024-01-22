@@ -1,6 +1,11 @@
 from collections import deque
 def solution(nums, k):
     answer = []
+    dq=deque(nums)
+
+    for _ in range(k):
+        dq.append(dq.popleft())
+    answer=list(dq)
     
     
     return answer

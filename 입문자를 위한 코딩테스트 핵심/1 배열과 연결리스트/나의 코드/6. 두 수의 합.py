@@ -1,6 +1,10 @@
 def solution(nums, target):
     answer = [0] * 2
+    left=0
+    right=len(nums)-1
 
+    for i in range(len(nums)//2):
+        if nums[i]==nums[]
 
     return answer
         
