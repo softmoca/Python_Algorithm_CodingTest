@@ -9,10 +9,11 @@ def BFS(home):
         n = len(Q)
         for i in range(n):
             x = Q.popleft()
-            if x == home:
-                return L
+         
             for nx in [x-1, x+1, x+5]:
-                if nx >= 0 and nx <= 10000 and ch[nx] == 0:
+                if  ch[nx] == 0:
+                    if nx ==home:
+                        return L+1
                     Q.append(nx)
                     ch[nx] = 1
         L += 1
