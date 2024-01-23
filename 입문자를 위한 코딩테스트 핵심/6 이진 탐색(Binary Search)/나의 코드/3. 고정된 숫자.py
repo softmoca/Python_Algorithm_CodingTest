@@ -1,6 +1,16 @@
 def solution(nums):
-    answer = 0
-    
+    answer = -1
+    left=0
+    right=len(nums)
+
+    while left<right:
+        mid=(left+right)//2
+        if nums[mid]<mid:
+            left=mid+1
+        elif nums[mid]>mid:
+            right=mid-1
+        elif nums[mid]==mid:
+            return mid
     
     return answer    
      

@@ -1,6 +1,17 @@
 def solution(nums, weight):
     answer = 0
-    
+    left=0
+    right=len(nums)
+    while left<right:
+        mid=(left+right)//2
+        if weight<=nums[mid]:
+            right=mid
+        elif weight>nums[mid]:
+            left=mid+1
+    if nums[-1]<weight:
+        answer=-1
+    else:
+        answer=right
 
     return answer
     
