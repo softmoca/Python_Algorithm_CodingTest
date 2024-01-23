@@ -5,3 +5,4 @@ def solution(nums, weight):
     
     
 print(solution([70, 80, 80, 80, 80, 90, 90, 90], 79)) 
+

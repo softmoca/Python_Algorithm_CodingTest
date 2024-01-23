@@ -1,9 +1,22 @@
 from collections import deque
 def solution(nums):
     answer = 0
+    dq=deque(nums)
+
+    while True:
+        if len(dq)==1:
+            return dq.popleft()
+        else:
+            
+            dq.popleft()
+            if len(dq)==1:
+                return dq.popleft()
+            else:
+                dq.popleft()
+            dq.append(dq.popleft())
 
 
-    return answer
+  
             
 print(solution([3, 1, 4, 5, 2, 6, 7]))
 print(solution([10, 8, 3, 1, 4, 5, 2, 6, 7, 9]))
