@@ -1,7 +1,15 @@
 def solution(box, limit):
     answer = 0
+    box.sort(key= lambda x: -x[1])
     
-    
+    for x in box:
+        if limit>=x[0]:
+            limit=limit-x[0]
+            answer=answer+x[1]*x[0]
+        elif limit <x[0]:
+            answer=answer+x[1]*limit
+            break
+
     return answer
     
                                            

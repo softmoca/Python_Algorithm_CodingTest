@@ -1,7 +1,13 @@
 def solution(weight, limit):
     answer = 0
-    
-        
+    weight.sort()
+    for x in weight:
+        if limit-x>=0:
+            limit=limit-x
+            answer+=1
+        else:
+            break
+
     return answer
                                            
 print(solution([300, 100, 230, 120, 90, 150, 60], 700))

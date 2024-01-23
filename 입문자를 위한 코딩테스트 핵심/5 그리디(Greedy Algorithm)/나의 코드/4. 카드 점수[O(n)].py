@@ -1,5 +1,17 @@
 def solution(nums, k):
     answer = 0
+    Sl=len(nums)-k
+    Minn=100
+    p1=0
+    p2=p1+Sl
+    while p2!=len(nums)+1:
+        if sum(nums[p1:p2])<Minn:
+            Minn=sum(nums[p1:p2])
+            print(p1,p2)
+        p1+=1
+        p2+=1
+
+    answer=sum(nums)-Minn
     
 
     return answer
