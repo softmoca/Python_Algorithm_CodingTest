@@ -1,11 +1,9 @@
 n,m,k=map(int,input().split())
-
 arr=list(map(int,input().split()))
 arr.sort(reverse=True)
 
 s=0
 cnt=0
-
 
 while True: 
     for _ in range(k):
@@ -21,10 +19,3 @@ while True:
 
     s+=arr[1]
     cnt+=1
-    
-
-
-
-
-
-
