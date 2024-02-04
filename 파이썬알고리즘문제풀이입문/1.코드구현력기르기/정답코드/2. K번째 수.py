@@ -1,5 +1,4 @@
-import sys
-sys.stdin=open("input.txt", "r")
+
 T=int(input())
 for t in range(T):
     n, s, e, k=map(int, input().split())
