@@ -9,24 +9,7 @@ while lt<=rt:
     mid=(lt+rt)//2
     if a[mid]==m:
         print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
-        print(mid+1)
+  
         break
     elif a[mid]>m:
         rt=mid-1
