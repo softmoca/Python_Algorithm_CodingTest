@@ -3,7 +3,6 @@ def Count_DVD(mid):
     M=mid
 
     for i in range(n):
-        
         M=M-arr[i]
         if M<0:
             cnt+=1
@@ -30,7 +29,7 @@ while l<=r:
     mid=(l+r)//2
 
     CC=Count_DVD(mid)
-    #print(l,mid,r,CC)
+ 
     if CC>m:
         l=mid+1
     elif CC<=m:
@@ -41,6 +40,6 @@ while l<=r:
    
 
 print(SS)
-#print(Count_DVD(23))
+
 
 
