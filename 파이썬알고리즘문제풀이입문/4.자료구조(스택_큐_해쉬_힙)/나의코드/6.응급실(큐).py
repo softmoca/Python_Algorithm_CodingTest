@@ -7,7 +7,7 @@ dq=deque()
 
 for x,y in enumerate(arr):
     dq.append([x,int(y)])
-print(dq)
+
 while True:
     M=0
     for i in range(len(dq)):
