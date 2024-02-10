@@ -4,12 +4,9 @@ def DFS(n):
         for i in range(len(ch)):
             if ch[i]==1:
                 S=S+arr[i]
-
         if (S==sum(arr)-S):
             print(S,sum(arr))
-            print("Yes")
-            print(ch)
-       
+            print("Yes")       
     else:
         ch[n]=1
         DFS(n-1)
