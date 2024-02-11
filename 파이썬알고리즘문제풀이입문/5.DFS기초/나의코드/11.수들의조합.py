@@ -9,8 +9,6 @@ def DFS(L,s):
             res[L]=arr[i]
             DFS(L+1,i+1)
         
-
-
 n,k=map(int,input().split())
 arr=list(map(int,input().split()))
 m=int(input())
@@ -18,7 +16,5 @@ m=int(input())
 res=[0]*k
 cnt=0
 DFS(0,0)
-
-
 
 print(cnt)
