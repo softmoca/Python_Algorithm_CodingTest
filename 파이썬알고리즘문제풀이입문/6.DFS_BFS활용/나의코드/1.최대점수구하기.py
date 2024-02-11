@@ -19,10 +19,7 @@ for _ in range(n):
     a,b=map(int,input().split())
     arr.append([a,b])
 M=0
-
 DFS(0,0,0)
-
-
 
 print(M)
 
