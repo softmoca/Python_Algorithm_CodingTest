@@ -9,5 +9,3 @@ if s==X:
     print("Yes")
 else:
     print("No")
-
-
