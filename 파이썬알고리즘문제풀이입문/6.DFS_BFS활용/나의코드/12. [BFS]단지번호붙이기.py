@@ -31,7 +31,10 @@ for i in range(n):
             res.append(cnt)
 
 
-print(res,cnt2)
+
+print(cnt2)
+for x in res:
+    print(x)
 
 
 

@@ -28,12 +28,12 @@ for i in range(n):
             res.append(cnt)
             
 
+
+
+
+
+
 print(cnt2)
 for x in res:
     print(x)
-
-
-
-
-
 
