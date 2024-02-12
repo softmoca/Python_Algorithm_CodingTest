@@ -3,7 +3,6 @@ SS=0
 
 for _ in range(20):
     a,b,c=map(str,input().split())
-    print(a,b,c,'dfdfdf')
     if c=='A+':
         c=4.5
     elif c=='A0':
