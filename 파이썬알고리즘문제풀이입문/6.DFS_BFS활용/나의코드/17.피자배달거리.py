@@ -1,22 +1,20 @@
 def DFS(L,s):
     global Minn
     if L==m:
-
-        temp=0
+        S=0
         for i in range(len(h)):
-            temp2=0
             Minnn=10000
             x,y=h[i]
             for j in res:
-                temp2=temp2+(abs(x-p[j-1][0]) +abs(y-p[j-1][1]) )
-            if Minnn>temp2:
-                Minnn=temp2
-            temp=temp+Minnn
-        if temp<Minn:
-            Minn=temp
+                temp2=abs(x-p[j][0]) +abs(y-p[j][1]) 
+                if Minnn>temp2:
+                    Minnn=temp2
+            S=S+Minnn
+        if S<Minn:
+            Minn=S
         
     else:
-        for i in range(s,PCount+1):
+        for i in range(s,PCount):
             res[L]=i
             DFS(L+1,i+1)
 
@@ -36,13 +34,9 @@ for i in range(n):
 
 PCount=len(p)
 res=[0]*(m)
-DFS(0,1)
+DFS(0,0)
 
 print(Minn)
-
-# from itertools import combinations
-# arr=[[1,2],[2,3],[3,4]]
-# print(list(combinations(arr,2)))
 
 
 
