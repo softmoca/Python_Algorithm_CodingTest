@@ -13,7 +13,6 @@ while True:
     elif arr[0]==arr[1] and arr[1]==arr[2]:
         print("Equilateral")
 
-    
     else: 
         print("Isosceles")
     
