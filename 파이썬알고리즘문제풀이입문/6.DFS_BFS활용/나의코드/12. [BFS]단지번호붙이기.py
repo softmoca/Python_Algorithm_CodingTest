@@ -3,7 +3,6 @@ from collections import deque
 n=int(input())
 arr=[list(map(int,input())) for _ in range(n)]
 res=[]
-
 cnt2=0
 dx=[-1,0,1,0]
 dy=[0,1,0,-1]
@@ -35,12 +34,6 @@ for i in range(n):
 print(cnt2)
 for x in res:
     print(x)
-
-
-
-
-
-
 
 
 

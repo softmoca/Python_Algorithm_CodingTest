@@ -6,7 +6,6 @@ def DFS(L):
             for j in range(27):
                 if arr[i]==j
 
-
         for i in range(27):
             if i<10:
                 res[L]=i

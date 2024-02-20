@@ -1,6 +1,5 @@
 from collections import deque
 
-
 arr=[list(map(int,input().split())) for _ in range(7) ]
 # ch=[[0]*7 for _ in range(7)]
 

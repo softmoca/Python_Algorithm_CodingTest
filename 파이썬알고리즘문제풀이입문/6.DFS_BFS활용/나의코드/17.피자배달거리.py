@@ -12,12 +12,10 @@ def DFS(L,s):
             S=S+Minnn
         if S<Minn:
             Minn=S
-        
     else:
         for i in range(s,PCount):
             res[L]=i
             DFS(L+1,i+1)
-
 
 n,m=map(int,input().split())
 
@@ -35,7 +33,6 @@ for i in range(n):
 PCount=len(p)
 res=[0]*(m)
 DFS(0,0)
-
 print(Minn)
 
 

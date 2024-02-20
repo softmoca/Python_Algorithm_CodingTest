@@ -13,8 +13,6 @@ def DFS(L):
             DFS(L+1)
             ch[i]-=arr[L]
             
-
-
 n=int(input())
 arr=[]
 for _ in range(n):

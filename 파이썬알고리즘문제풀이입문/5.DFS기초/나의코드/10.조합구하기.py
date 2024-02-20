@@ -8,12 +8,6 @@ def DFS(L):
                 res[L]=i
                 DFS(L+1)
                 ch[i]=0
-                
-
-
-
-
-
 
 n,m=map(int,input().split())
 

@@ -11,7 +11,6 @@ def DFS(x,y):
                 DFS(nx,ny)
                 ch[nx][ny]=0
 
-
 n=int(input())
 arr=[list(map(int,input().split())) for _ in range(n)]
 ch=[[0]*n for _ in range(n)]

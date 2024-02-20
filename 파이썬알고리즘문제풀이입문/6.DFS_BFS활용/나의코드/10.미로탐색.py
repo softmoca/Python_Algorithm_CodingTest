@@ -10,8 +10,6 @@ def DFS(x,y):
             DFS(nx,ny)
             ch[nx][ny]=0
 
-
-
 arr=[list(map(int,input().split())) for _  in range(7)]
 
 dx=[-1,0,1,0]

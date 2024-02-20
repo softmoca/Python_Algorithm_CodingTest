@@ -1,5 +1,4 @@
 def DFS(day,summ):
-    
     global M
     if day>n+1:
         return
@@ -10,7 +9,6 @@ def DFS(day,summ):
         DFS(day+dayS[day],summ+PointS[day])
         DFS(day+1,summ)
 
-
 n=int(input())
 dayS=[0]
 PointS=[0]
@@ -20,8 +18,6 @@ for _ in range(n):
     PointS.append(b)
 M=0
 DFS(1,0)
-
-
 print(M)
 
 

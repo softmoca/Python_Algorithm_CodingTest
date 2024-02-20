@@ -9,8 +9,6 @@ for i in arr:
     summ+=i
     prefix_sum.append(summ)
 
-
-
 for _ in range(m):
     a,b=map(int,input().split())
     print(prefix_sum[b]-prefix_sum[a-1])
