@@ -18,7 +18,7 @@ while True:
     # 만약 총합이 S를 넘지 않는다면, right 을 오른쪽으로 한칸씩 옮기며 총합이 S를 넘을때까지 더함
     else:
         sum += numbers[right]
-        right += 1
+        right += 1w
 
 if min_length == sys.maxsize:
     print(0)

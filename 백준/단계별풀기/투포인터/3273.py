@@ -1,13 +1,10 @@
 n=int(input())
-
 arr=list(map(int,input().split()))
 T=int(input())
 
 arr.sort()
-
 l=0
 r=n-1
-
 cnt=0
 
 while l<r:

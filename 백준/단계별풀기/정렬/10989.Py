@@ -11,18 +11,23 @@
 #     print(x)
 
 
-import sys
+# import sys
 
-n=int(input())
+# n=int(input())
 
-ch=[0]*(10001)
+# ch=[0]*(10001)
 
-for i in range(n):
-    x=int(sys.stdin.readline())
-    ch[x]+=1
+# for i in range(n):
+#     x=int(sys.stdin.readline())
+#     ch[x]+=1
 
-for i in range(1,10001):
+# for i in range(1,10001):
 
-    if ch[i]!=0:
-        for _ in range(ch[i]):
-            print(i)
+#     if ch[i]!=0:
+#         for _ in range(ch[i]):
+#             print(i)
+
+
+
+
+
