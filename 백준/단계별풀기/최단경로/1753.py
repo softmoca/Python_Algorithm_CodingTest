@@ -3,6 +3,7 @@ import sys
 
 
 def da(start):
+    dis=[INF]*(V+1)
     dis[start]=0
     q=[]
     heapq.heappush(q,(0,start))
@@ -19,6 +20,7 @@ def da(start):
             if cost<dis[i[0]]:
                 dis[i[0]]=cost
                 heapq.heappush(q,(cost,i[0]))
+    return dis
 
 V,E=map(int,input().split())
 start=int(input())
@@ -31,11 +33,11 @@ for _ in range(E):
     graph[a].append((b,c))
 
 INF=1e9
-dis=[INF]*(V+1)
 
-da(start)
 
-print(dis)
+arr=da(start)
+
+print(arr)
 
 
 
