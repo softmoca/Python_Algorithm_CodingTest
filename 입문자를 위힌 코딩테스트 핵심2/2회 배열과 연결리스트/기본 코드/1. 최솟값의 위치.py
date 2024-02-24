@@ -1,5 +1,15 @@
 def solution(nums):
     answer = 0
+    Minn=min(nums)
+
+    for idx,val in enumerate(nums):
+        if val==Minn:
+            answer=idx
+
+
+ 
+
+
     
     return answer
 
