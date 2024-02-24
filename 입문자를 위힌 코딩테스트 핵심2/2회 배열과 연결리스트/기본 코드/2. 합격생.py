@@ -1,5 +1,9 @@
 def solution(score, k):
     answer = 0
+    for x in score:
+        if x>=k:
+            answer+=1
+        
           
     return answer
 
