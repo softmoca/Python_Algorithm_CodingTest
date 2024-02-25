@@ -1,8 +1,12 @@
 def solution(nums):
     answer = 0
-    
+
+    N=len(nums)
+
+    res=set(nums)
+  
             
-    return answer
+    return N//2 if len(res)>=N//2 else len(res)
     
                        
 print(solution([2, 1, 1, 3, 2, 3, 1, 2]))

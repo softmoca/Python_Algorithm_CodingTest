@@ -1,6 +1,7 @@
 def solution(nums, target):
     answer = [0]*2
     nums.sort()
+    print(nums)
     left = 0
     right = len(nums) - 1
     while left < right:
