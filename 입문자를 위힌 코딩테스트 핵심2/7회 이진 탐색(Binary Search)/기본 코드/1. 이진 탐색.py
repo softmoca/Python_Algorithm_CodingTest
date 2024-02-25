@@ -1,5 +1,19 @@
 def solution(nums, target):
-    answer = 0
+    answer = -1
+
+    l=0
+    r=len(nums)-1
+    while l<=r:
+        mid=(l+r)//2
+
+        if nums[mid]==target:
+            answer=mid
+            break
+        elif nums[mid]<target:
+            l=l+1
+        elif nums[mid]>target:
+            r=r-1
+
     
 
     return answer

@@ -1,6 +1,21 @@
 def solution(nums, weight):
-    answer = 0
-    
+    answer = -1
+
+
+    l=0
+    r=len(nums)-1
+
+    while l<=r:
+        mid=(l+r)//2
+
+        if nums[mid]>=weight:
+            r=r-1
+        elif nums[mid]<weight:
+            l=l+1
+    if max(nums)<weight:
+        answer=-1
+    else: 
+        answer=mid
 
     return answer
     
