@@ -1,6 +1,19 @@
-def solution(n, moves): 
+def solution(n, moves):
+    dx = [-1, 0, 1, 0]
+    dy = [0, 1, 0, -1]
+    dir = ['U', 'R', 'D', 'L']
     x = y = 0
-    
+    for c in moves:
+        for k in range(4):
+            if c == dir[k]:
+                nx = x + dx[k]
+                ny = y + dy[k]
+
+        if 0<=nx< n and 0<=ny< n:
+            x = nx
+            y = ny
+
+        
  
     return [x, y]    
                 

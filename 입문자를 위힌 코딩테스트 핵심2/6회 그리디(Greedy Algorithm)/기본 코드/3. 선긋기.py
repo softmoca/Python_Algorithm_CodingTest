@@ -1,6 +1,16 @@
 def solution(m, nums):
     answer = 0
-   
+    n = len(nums)
+    nums.sort(key = lambda v : v[0])
+    start = end = x = 0
+    while x < n:
+        while x < n and nums[x][0] <= start:
+            end = max(end, nums[x][1])
+            x += 1
+        answer += 1
+        if end == m:
+            return answer
+        start = end
             
     return answer
     

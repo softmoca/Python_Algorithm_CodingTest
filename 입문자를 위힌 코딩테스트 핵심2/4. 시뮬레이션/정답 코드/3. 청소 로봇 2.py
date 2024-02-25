@@ -9,11 +9,11 @@ def solution(n, moves):
                 nx = x + dx[k]
                 ny = y + dy[k]
 
-        if nx < 0 or nx >= n or ny < 0 or ny >= n:
-            continue
+        if 0<=nx< n and 0<=ny< n:
+            x = nx
+            y = ny
 
-        x = nx
-        y = ny
+        
  
     return [x, y]    
                 

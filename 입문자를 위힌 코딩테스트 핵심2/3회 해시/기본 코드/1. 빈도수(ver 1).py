@@ -1,7 +1,21 @@
+from collections import defaultdict
+
 def solution(nums):
     answer = -1
+
+    dic=defaultdict(int)
+
+    for x in nums:
+        dic[x]+=1
     
-       
+
+    for key,val in dic.items():
+        if val==1:
+            if answer<key:
+                answer=key
+
+
+
     return answer
                             
                 

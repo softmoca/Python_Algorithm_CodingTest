@@ -1,6 +1,15 @@
 def solution(weight, limit):
     answer = 0
-    
+    weight.sort()
+
+    for x in weight:
+        if limit-x>=0:
+            limit=limit-x
+            answer+=1
+
+
+
+
         
     return answer
                                            

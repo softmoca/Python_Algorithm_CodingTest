@@ -2,6 +2,7 @@ from collections import defaultdict, Counter
 def solution(nums):
     answer = -1
     nH = Counter(nums)
+    print(nH)
     for key in nH:
         if nH[key] == 1:
             answer = max(answer, key)

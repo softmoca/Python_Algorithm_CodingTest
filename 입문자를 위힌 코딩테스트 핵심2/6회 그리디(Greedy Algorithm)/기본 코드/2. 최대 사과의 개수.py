@@ -1,6 +1,18 @@
 def solution(box, limit):
     answer = 0
-    
+
+
+
+    box.sort(key=lambda x:-x[1])
+
+
+    for cnt,val in box:
+        for i in range(cnt):
+            if limit>0:
+                answer=answer+val
+                limit=limit-1
+
+
     
     return answer
     

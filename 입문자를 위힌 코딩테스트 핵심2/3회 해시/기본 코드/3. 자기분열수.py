@@ -1,9 +1,17 @@
 from collections import Counter
 def solution(nums):
-    answer = 0
+    answer = 1e9
+    dic=Counter(nums)
+
+
+    for key,val in dic.items():
+        if key==val:
+            if answer>key:
+                answer=key
+
     
 
-    return answer 
+    return -1  if answer==1e9 else answer
                           
 print(solution([1, 2, 3, 1, 3, 3, 2, 4]))
 print(solution([1, 2, 3, 3, 3, 2, 4, 5, 5, 5]))

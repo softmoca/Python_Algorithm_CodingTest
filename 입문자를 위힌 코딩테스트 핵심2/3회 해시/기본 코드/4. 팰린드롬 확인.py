@@ -1,8 +1,15 @@
 from collections import Counter
 def solution(s):
-    answer = False
+
+    dic=Counter(s)
+    cnt=0
+    for val in dic.values():
+        if val%2==1:
+            cnt+=1
+
+     
     
-    return answer     
+    return False if cnt >1 else True   
                       
 print(solution("abacbaa"))
 print(solution("abaaceeffkckbaa"))

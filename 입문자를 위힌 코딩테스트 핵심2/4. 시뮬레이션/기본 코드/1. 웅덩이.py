@@ -1,6 +1,28 @@
 def solution(nums):
     answer = 0
-    
+    for x in nums:
+        x.append(1000)
+        x.insert(0,1000)
+
+    nums.append([1000,1000,1000,1000,1000,1000,1000])
+    nums.insert(0,[1000,1000,1000,1000,1000,1000,1000])
+
+    dx=[-1,0,1,0]
+    dy=[0,1,0,-1]
+
+    for i in range(1,6):
+        for j in range(1,6):
+            for k in range(4):
+                nx=i+dx[k]
+                ny=j+dy[k]
+                flag=0
+                if nums[nx][ny]<=nums[i][j]:
+                    flag=1
+                    break
+            else:
+                answer+=1
+
+
 
     return answer
                        
