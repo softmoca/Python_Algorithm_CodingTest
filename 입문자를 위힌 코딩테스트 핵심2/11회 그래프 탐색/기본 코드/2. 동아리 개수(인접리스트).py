@@ -1,6 +1,25 @@
+def DFS(x,ch,graph,n):
+    ch[x]=1
+    for i in graph[x]:
+        if ch[i]==0:
+            DFS(i,ch,graph,n)
+
+
 def solution(n, edges):
     answer = 0
-    
+    ch=[0]*(n+1)
+
+    graph=[[] for _ in range(n+1)]
+
+    for [a,b] in edges:
+        graph[a].append(b)
+        graph[b].append(a)
+    for i in range(1,n+1):
+        if ch[i]==0:
+            answer+=1
+            DFS(i,ch,graph,n)
+
+
     return answer
                     
 
