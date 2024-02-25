@@ -1,8 +1,16 @@
 def solution(s):
     answer = ""
 
+    stack=[]
+
+    for x in s:
+        if x=='#':
+            stack.pop()
+        else:
+            stack.append(x)
+
     
-    return answer
+    return answer.join(stack)
             
           
 print(solution("abc##ec#ab"))

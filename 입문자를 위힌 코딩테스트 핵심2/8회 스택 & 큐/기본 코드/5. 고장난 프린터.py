@@ -1,6 +1,21 @@
 from collections import deque
 def solution(nums):
     answer = 0
+    dq=deque(nums)
+    while dq:
+        if len(dq)==1:
+                answer=dq.popleft()
+                break
+        for _ in range(2):
+            if len(dq)==1:
+                answer=dq.popleft()
+                break
+            else:
+                if dq:
+                    dq.popleft()
+        if dq:       
+            dq.append(dq.popleft())
+
 
 
     return answer
