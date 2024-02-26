@@ -1,5 +1,5 @@
 import sys
-sys.stdin=open("input.txt", "r")
+
 def Count(len):
     cnt=0
     for x in Line:
@@ -8,7 +8,7 @@ def Count(len):
 
 k, n=map(int, input().split())
 Line=[]
-res=0
+res=[]
 largest=0
 for i in range(k):
     tmp=int(input())
@@ -19,7 +19,7 @@ rt=largest
 while lt<=rt:
     mid=(lt+rt)//2
     if Count(mid)>=n:
-        res=mid
+        res.append(mid)
         lt=mid+1
     else:
         rt=mid-1

@@ -17,7 +17,7 @@ while True:
         cnt+=1
         tot-=a[lt]
         lt+=1
-    else:
+    elif tot>m:
         tot-=a[lt]
         lt+=1
 print(cnt)
